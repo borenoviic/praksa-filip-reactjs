@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$font-family: Roboto;
+$font-size: 16px;
+$bg-color-crv: #B50014;
+$bg-color: #000000f0;
+$bg-color-day: #fff;
+$text-color-day: #fff;
+$text-color-night: #000;
+
+.handwerk {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 0px 0px 0px;
+    text-align: center;
+    max-width: 680px;
+}
+
+@media (max-width: 920px) {
+
+    .handwerk {
+        max-width: 365px;
+        padding-top: 50px;
+
+        h2 {
+            font-size: 25px;
+        }
+
+        h4 {
+            font-size: 17px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .handwerk {
+        p {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+    }
+}

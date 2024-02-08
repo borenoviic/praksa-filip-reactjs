@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.dry-aged {
+  display: flex;
+  align-items: center;
+}
+.dry-aged .ostalo {
+  width: 50%;
+  padding-top: 160px;
+  display: flex;
+  justify-content: center;
+}
+.dry-aged .ostalo2 {
+  max-width: 400px;
+}
+.dry-aged .ostalo2 h3 {
+  margin-top: -20px;
+}
+.dry-aged .ostalo2 p {
+  max-width: 400px;
+}
+.dry-aged .dry-aged-img {
+  width: 50%;
+  margin-top: 150px;
+  display: flex;
+  justify-content: left;
+}
+.dry-aged .dry-aged-img .slike #cetvrta {
+  width: 100%;
+  max-height: 400px;
+}
+.dry-aged .dry-aged-img .slike .slikee {
+  display: flex;
+  max-height: 150px;
+}
+.dry-aged .dry-aged-img .slike .slikee #prva,
+.dry-aged .dry-aged-img .slike .slikee #druga {
+  padding: 3px 7px 0px 0px;
+  flex: 1;
+  width: 30%;
+  height: auto;
+}
+.dry-aged .dry-aged-img .slike .slikee #treca {
+  padding-top: 3px;
+  flex: 1;
+  width: 30%;
+  height: auto;
+}
+
+@media (max-width: 920px) {
+  .dry-aged {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+  }
+  .dry-aged .ostalo {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+  .dry-aged .ostalo .ostalo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .dry-aged .ostalo .ostalo2 h2 {
+    font-size: 25px;
+  }
+  .dry-aged .ostalo .ostalo2 h3 {
+    font-size: 18px;
+  }
+  .dry-aged .ostalo .ostalo2 .pp {
+    font-size: 14px;
+    max-width: 345px;
+  }
+  .dry-aged .dry-aged-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .dry-aged .dry-aged-img .slike #cetvrta {
+    width: 100%;
+    max-height: 400px;
+  }
+  .dry-aged .dry-aged-img .slike .slikee {
+    display: flex;
+    max-height: 150px;
+  }
+  .dry-aged .dry-aged-img .slike .slikee #prva,
+  .dry-aged .dry-aged-img .slike .slikee #druga {
+    padding: 5px 7px 0px 0px;
+    flex: 1;
+    width: 30%;
+    height: auto;
+  }
+  .dry-aged .dry-aged-img .slike .slikee #treca {
+    padding: 5px 0px 0px 0px;
+    flex: 1;
+    width: 30%;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .dry-aged .ostalo {
+    max-width: 100%;
+  }
+  .dry-aged .ostalo .ostalo2 {
+    max-width: 100%;
+  }
+  .dry-aged .ostalo .ostalo2 p {
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$font-family: Roboto;
+$font-size: 16px;
+$bg-color-crv: #B50014;
+$bg-color: #000000f0;
+$bg-color-day: #fff;
+$text-color-day: #fff;
+$text-color-night: #000;
+
+.rellax {
+    background-image: url("parallax.png");
+    min-height: 540px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    .rellax2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 193px;
+
+        .pp {
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    .rellax {
+        .rellax2 {
+            button {
+                p {
+                    font-size: 13px;
+                }
+            }
+
+            p {
+                font-size: 25px;
+            }
+        }
+    }
+}
