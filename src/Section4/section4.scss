@@ -37,6 +37,13 @@ $text-color-night: #000;
 
 @media (max-width: 500px) {
     .handwerk {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h4{
+            max-width: 200px;
+        }
         p {
             margin: 0 auto;
             max-width: 300px;

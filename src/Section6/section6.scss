@@ -100,6 +100,30 @@ $text-color-night: #000;
                 text-align: center;
 
                 h2 {
+                    max-width: 400px;
+                    font-size: 28px;
+                }
+
+                h3 {
+                    max-width: 280px;
+                    margin-top: 0px;
+                    font-size: 20px;
+                }
+
+                p {
+                    max-width: 80%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .spices {
+        .lista {
+            .list1 {
+                h2 {
                     max-width: 200px;
                     font-size: 25px;
                 }
@@ -111,7 +135,7 @@ $text-color-night: #000;
                 }
 
                 p {
-                    max-width: 70%;
+                    max-width: 90%;
                     font-size: 14px;
                 }
             }
