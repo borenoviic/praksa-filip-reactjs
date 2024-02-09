@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$font-family: Roboto;
+$font-size: 16px;
+$bg-color-crv: #B50014;
+$bg-color: #000000f0;
+$bg-color-day: #fff;
+$text-color-day: #fff;
+$text-color-night: #000;
+
+.footer {
+    background-color: $bg-color-crv;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer1 {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 70%;
+        .logo {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .logo-img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .info-glavni {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            justify-content: left;
+            width: 100%;
+            .infoo {
+                text-align: left;
+
+                p {
+                    position: relative;
+                    color: $text-color-day;
+                    font-size: 12px;
+
+                    &::before {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: 900;
+                    }
+
+                    &.fa-map-pin::before {
+                        content: '\f276';
+                    }
+
+                    &.fa-phone::before {
+                        content: '\f095';
+                    }
+
+                    &.fa-envelope::before {
+                        content: '\f0e0';
+                    }
+                }
+            }
+        }
+
+        .social-media {
+            flex: 1;
+            color: $text-color-day;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+
+            p {
+                font-size: 14px;
+                padding-right: 10px;
+            }
+
+            .icons {
+                display: flex;
+                gap: 5px;
+
+                .tw,
+                .ig {
+                    border: 2px solid white;
+                    border-radius: 100%;
+                    padding: 0px;
+                    margin: 0;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    svg {
+                        margin-left: 1px;
+                        margin-top: 1px;
+                    }
+                }
+
+                .fb,
+                .yt {
+                    border: 2px solid white;
+                    border-radius: 100%;
+                    padding: 0px;
+                    margin: 0;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    svg {
+                        margin-left: 0px;
+                        margin-top: 1px;
+                    }
+                }
+            }
+        }
+    }
+
+    .last-container {
+        background-color: #ff0000;
+        margin-top: 0px;
+        width: 100%;
+        .last1 {
+            padding: 0px;
+            display: flex;
+            background-color: #000000ab;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+
+            .lastt {
+                display: flex;
+                width: 70%;
+
+                .frst {
+                    display: flex;
+                    flex: 1;
+                    width: 100%;
+                    justify-content: left;
+                    .first {
+                        margin: 0;
+                        color: #999999;
+                        font-size: 11px;
+                    }
+                }
+
+                .scnd {
+                    display: flex;
+                    flex: 1;
+                    width: 100%;
+                    justify-content: right;
+
+                    .second {
+                        margin: 0;
+                        color: #999999;
+                        font-size: 11px
+                    }
+                }
+
+                .sec {
+                    font-style: italic;
+                    padding-left: 3px;
+                    color: #b6b6b6;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1270px) {
+    .footer{
+        .footer1{
+            .info-glavni{
+                .infoo{
+                    p{
+                        font-size: 11px;
+                    }
+                }
+            }
+            .social-media{
+                p{
+                    text-wrap: nowrap;
+                    font-size: 12px;
+                }
+
+                .icons{
+                    .fb,.tw,.yt, .ig{
+                        width: 20px;
+                        height: 20px;
+
+                        svg {
+                            font-size: 14px;
+                            margin-top: 0px;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        .footer1 {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            background-color: $bg-color-crv;
+            flex-direction: column;
+            justify-content: center;
+
+            .logo {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .logo-img {
+                    width: 100px;
+                    height: 100px;
+                    padding: 30px 0px;
+                }
+            }
+
+            .info-glavni {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                justify-content: center;
+
+                .infoo {
+                    text-align: center;
+                    padding-top: 20px;
+
+                    p {
+                        position: relative;
+                        color: $text-color-day;
+                        font-size: 12px;
+
+                        &::before {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            font-family: 'Font Awesome 5 Free';
+                            font-weight: 900;
+                        }
+
+                        &.fa-map-pin::before {
+                            content: '';
+                        }
+
+                        &.fa-phone::before {
+                            content: '';
+                        }
+
+                        &.fa-envelope::before {
+                            content: '';
+                        }
+                    }
+                }
+            }
+
+            .social-media {
+                flex: 1;
+                color: $text-color-day;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 5px;
+
+                p {
+                    font-size: 12px;
+                    padding: 20px;
+                    margin: 0px;
+                }
+
+                .icons {
+                    padding-bottom: 25px;
+
+                    .fb,
+                    .ig,
+                    .yt {
+                        border: 2px solid white;
+                        border-radius: 100%;
+                        padding: 0px;
+                        margin-top: 0;
+                        width: 40px;
+                        height: 40px;
+                        font-size: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        svg {
+                            font-size: 26px;
+                            margin-left: 0px;
+                            margin-top: 0px;
+                        }
+                    }
+
+                    .tw
+                    {
+                        border: 2px solid white;
+                        border-radius: 100%;
+                        padding: 0px;
+                        margin-top: 0;
+                        width: 40px;
+                        height: 40px;
+                        font-size: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        svg {
+                            font-size: 26px;
+                            margin-left: 2px;
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .last-container {
+            background-color: #ff0000;
+            margin-top: 0px;
+
+            .last1 {
+                padding: 0px;
+                display: flex;
+                background-color: #000000ab;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                .lastt {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    height: 100%;
+                    gap: 15px;
+                    padding: 20px;
+
+                    .frst {
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+
+                        .first {
+                            margin: 0;
+                            color: #999999;
+                            font-size: 11px;
+                        }
+                    }
+
+                    .scnd {
+                        display: flex;
+                        justify-content: center;
+
+                        .second {
+                            margin: 0;
+                            color: #999999;
+                            font-size: 11px
+                        }
+                    }
+
+                    .sec {
+                        color: #b6b6b6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        .last-container {
+            .last1 {
+                .lastt {
+                    .frst {
+                        .first {
+                            font-size: 10px;
+                        }
+                    }
+
+                    .scnd {
+                        .second {
+                            font-size: 10px
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
